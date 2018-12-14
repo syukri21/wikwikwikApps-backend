@@ -25,4 +25,5 @@ Route.group(() => {
 	Route.get('scores', 'UserController.getAllScore');
 
 	Route.post('user', 'UserController.userData');
+	Route.patch('user', 'UserController.updateScore');
 }).prefix('api/v1/');
