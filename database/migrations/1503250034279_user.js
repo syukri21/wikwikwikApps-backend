@@ -9,8 +9,6 @@ class UserSchema extends Schema {
 			table.increments();
 			table.string('userid').notNullable().unique();
 			table.string('username').notNullable();
-			table.string('email').notNullable().unique();
-			table.string('password').notNullable();
 			table.integer('score');
 			table.timestamps();
 		});

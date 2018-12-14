@@ -23,4 +23,6 @@ Route.get('/', () => {
 
 Route.group(() => {
 	Route.get('scores', 'UserController.getAllScore');
+
+	Route.post('user', 'UserController.userData');
 }).prefix('api/v1/');
